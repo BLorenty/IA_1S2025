@@ -39,7 +39,6 @@ function randomlyDirty(states) {
     const room = Math.random() < 0.5 ? 1 : 2;
     if (states[room] === "CLEAN") {
       states[room] = "DIRTY";
-      document.getElementById("log").innerHTML += "<br>A ROOM HAS BEEN DIRTY!! " + (room === 1 ? "A" : "B") + "!";
     }
   }
 }
