@@ -76,12 +76,12 @@ function test(states) {
 
   // CHECK IF ALL STATES HAVE BEEN VISITED
   if (visitedStates.size === TOTAL_STATES) {
-    document.getElementById("log").innerHTML += "<br>Every possible state has been visited!";
+    document.getElementById("log").innerHTML += "<br><b><i>Every possible state has been visited!</i></b>";
     // LAST CLEANING
     if (states[1] === "DIRTY" || states[2] === "DIRTY") {
       setTimeout(function () { test(states); }, 2000);
     } else {
-      document.getElementById("log").innerHTML += "<br>Cleaning completed!";
+      document.getElementById("log").innerHTML += "<br><b><i>Cleaning completed!</i></b>";
       return;
     }
   } else {
