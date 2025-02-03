@@ -78,7 +78,7 @@ function test(states) {
   // CHECK IF ALL STATES HAVE BEEN VISITED
   if (visitedStates.size === TOTAL_STATES) {
     document.getElementById("log").innerHTML += "<br>Every possible state has been visited!";
-    // Forzar limpieza final
+    // LAST CLEANING
     if (states[1] === "DIRTY" || states[2] === "DIRTY") {
       setTimeout(function () { test(states); }, 2000);
     } else {
